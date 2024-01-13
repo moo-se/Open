@@ -17,7 +17,7 @@ const Chat = () => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const location = useLocation();
-  const ENDPOINT = "http://localhost:4000";
+  const ENDPOINT = "https://open-chat-api.onrender.com/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search); //{name: 'aaa', room: 'bbb'}
